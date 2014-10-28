@@ -6,7 +6,7 @@ AngularJS Chosen directive
 This directive brings the [Chosen](http://harvesthq.github.com/chosen/) jQuery plugin
 into AngularJS with ngModel and ngOptions integration.
 
-To use, include "localytics.directives" as a dependency in your Angular module.  You can now
+To use, include "Angular-Chosen" as a dependency in your Angular module.  You can now
 use the "chosen" directive as an attribute on any select element.  Angular version 1.2+ is required.
 
 # Installation
@@ -89,7 +89,7 @@ Include chosen-spinner.css and spinner.gif to show an Ajax spinner icon while yo
 
 ##### app.js
 ```js
-angular.module('App', ['ngResource', 'localytics.directives'])
+angular.module('App', ['ngResource', 'Angular-Chosen'])
 .controller('BeerCtrl', function($scope) {
   $scope.beers = $resource('api/beers').query()
 });
@@ -107,7 +107,8 @@ angular.module('App', ['ngResource', 'localytics.directives'])
 </div>
 ```
 
-Image of select defined above in loading state:  <img src="https://raw.github.com/localytics/angular-chosen/master/example/choose-a-beer.png">
+Image of select defined above in loading state:  <img src="https://raw.githubusercontent.com/TruckMuncher/Chosen-Angular/master/example/choose-a-beer.png">
+
 
 Note: Assigning promises directly to scope is now deprecated in Angular 1.2+.  Assign the results of the promise to scope
 once the promise returns.  The loader animation will still work as long as the collection expression
