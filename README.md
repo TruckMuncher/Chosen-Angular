@@ -11,7 +11,7 @@ use the "chosen" directive as an attribute on any select element.  Angular versi
 
 # Installation
 
-    $ bower install angular-chosen-localytics --save
+    $ bower install Angular-Chosen --save
 
 # Features
   * Works with `ngModel` and `ngOptions`

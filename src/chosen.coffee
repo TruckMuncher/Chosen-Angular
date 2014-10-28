@@ -1,6 +1,6 @@
-angular.module('localytics.directives', [])
+angular.module('Angular-Chosen', [])
 
-angular.module('localytics.directives').directive 'chosen', ->
+angular.module('Angular-Chosen').directive 'chosen', ->
 
   # This is stolen from Angular...
   NG_OPTIONS_REGEXP = /^\s*(.*?)(?:\s+as\s+(.*?))?(?:\s+group\s+by\s+(.*))?\s+for\s+(?:([\$\w][\$\w]*)|(?:\(\s*([\$\w][\$\w]*)\s*,\s*([\$\w][\$\w]*)\s*\)))\s+in\s+(.*?)(?:\s+track\s+by\s+(.*?))?$/
@@ -36,7 +36,7 @@ angular.module('localytics.directives').directive 'chosen', ->
   terminal: true
   link: (scope, element, attr, ngModel) ->
 
-    element.addClass('localytics-chosen')
+    element.addClass('Chosen-Angular')
 
     # Take a hash of options from the chosen directive
     options = scope.$eval(attr.chosen) or {}

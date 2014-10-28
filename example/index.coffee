@@ -1,4 +1,4 @@
-angular.module('chosenExampleApp', ['localytics.directives'])
+angular.module('chosenExampleApp', ['Angular-Chosen'])
 
 .config(['$parseProvider', ($parseProvider) ->
   $parseProvider.unwrapPromises(true)
