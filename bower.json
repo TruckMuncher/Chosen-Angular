@@ -1,20 +1,13 @@
 {
-  "name": "Chosen-Angular",
+  "name": "chosen-angular",
   "version": "1.0.0",
   "main": "chosen.js",
   "ignore": [
     "src",
-    "example",
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "example"
   ],
   "dependencies": {
     "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.2.0/chosen_v1.2.0.zip",
     "angular": ">=1.2.0"
-  },
-  "homepage": "https://github.com/TruckMuncher/Chosen-Angular",
-  "description": "AngularJS Chosen Directive"
+  }
 }
